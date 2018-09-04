@@ -8,8 +8,29 @@
 
   <body>
   	<h1>To-Do List<span class="ec ec-spiral-calendar"></span></h1>
-    <button id = "displayTodosButton">Display All</button>
-    <button id = "toggleAllButton">Toggle All</button>
+  	<div>
+  	  <button onclick = "handlers.displayTodos()">Display All</button>
+      <button onclick = "handlers.toggleAll()">Toggle All</button>
+  	</div>
+  	
+  	<div>
+  	  <button onclick = "handlers.addTodo()">Add Todo</button>
+  	  <input type="text" id = "addTodoTextInput">
+  	</div>
+  	<div>
+  	  <button onclick = "handlers.changeTodo()">Change Todo</button>
+  	  <input id = "changeTodoPositionInput" type = "number">
+  	  <input id = "changeTodoTextInput" type = "text">
+  	</div>
+  	<div>
+  	  <button onclick = "handlers.deleteTodo()">Delete Todo</button>
+  	  <input id = "deleteTodoPositionInput" type = "number">
+  	</div>
+  	<div>
+  	  <button onclick = "handlers.toggleTodo()">Toggle Todo</button>
+  	  <input id = "toggleTodoPositionInput" type="number">
+  	</div>
+    
     <script src="script.js"></script>
   </body>
 
